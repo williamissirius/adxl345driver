@@ -1,11 +1,12 @@
 import scipy.optimize
 from pylab import *
 from numpy import *
-from mpl_toolkits.mplot3d import Axes3
+#from mpl_toolkits.mplot3d import Axes3
+from mpl_toolkits.mplot3d import *
 
 cal = open('cal.dat')
 fig = figure(1); clf()
-az = Axis3D(fig)
+az = Axes3D(fig)
 
 for f in [cal]:
     data = array([map(float, l.split()) for l in f.readlines()])

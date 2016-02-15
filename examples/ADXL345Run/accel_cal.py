@@ -29,7 +29,7 @@ for f in [cal]:
     print best
     print 1/best[:3]
 
-    here
+    # here
     A = array([[cx + r * cos(theta),
                 cy + r * sin(theta)] for theta in arange(0, 2 * pi, 1 * pi/180)])
     # plot(A[:,0], A[:,1], 'g-')
